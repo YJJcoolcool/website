@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%; background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/1024px-Checkerboard_pattern.svg.png");">
+<html style="height: 100%;">
 <head>
 	<title>YJJcoolcool</title>
 
@@ -57,7 +57,13 @@
 		.top-section .welcome-msg{
 			color: black;
 			font-size: 60px;
-			padding-top: 100px;
+			padding-top: 10px;
+		}
+
+		.top-section .underdev-msg{
+			color: black;
+			font-size: 30px;
+			padding-top: 50px;
 		}
 
 		.main {
@@ -78,13 +84,42 @@
 	<h1 class="my-works">My Works</h1>
 </header>
 
+
+
 <section class="top-section">
-	<h1 class="name-title">I am YJJcoolcool</h1>
-	<h1 class="welcome-msg">Welcome to my Website!</h1>
+	<h1 class="name-title" id="name-title"> </h1>
+	<h1 class="welcome-msg" id="welcome-msg"> </h1>
+	<h1 class="underdev-msg" id="underdev-msg"> </h1>
 </section>
+<script>
+var i = 0;
+var txt = 'I am YJJcoolcool';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("name-title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+
+function disp_wel_msg() {
+	document.getElementById("welcome-msg").innerHTML = "Welcome to my website!";
+}
+
+function disp_dev_msg() {
+	document.getElementById("underdev-msg").innerHTML = "This website is still under development. Check again next time!";
+}
+
+typeWriter();
+setTimeout(disp_wel_msg, 1900);
+setTimeout(disp_dev_msg, 3000);
+</script>
+
 
 <section class="main">
-	<p>You probably know me from the things I do online.</p>
 </section>
 
 </body>
