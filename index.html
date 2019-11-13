@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 <head>
 	<title>YJJcoolcool</title>
 
@@ -7,50 +7,70 @@
 		*{
 			margin: 0;
 			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 
 		.header{
-			height: 40px;
+			height: 50px;
 			position: relative;
 		}
 		.header h1{
 			color:white;
 			font-family: Arial, Helvetica, sans-serif;
 			position: absolute;
+			top: 25%;
+			font-size: 100dpi;
 		}
 		.header .title {
-			left:30px;
-			top: 50%;
+			position: absolute;
+			left:40px;
+			top: 15%;
 		}
 		.header .image {
-			width:20px;
-			height: 20px;
+			width:30px;
+			height: 30px;
 			position: absolute;
 			left:3px;
-			top: 50%;
+			top: 20%;
 		}
 		.header .my-works {
 			right: 30px;
-			top:50%;
+			top: 15%;
 		}
 
 
 
-		.top-section
+		.top-section{
+			left: 0%;
+			right: 0%;
+			width: 100%;
+			height: 95%;
+			background-color: rgb(240,240,50);
+			text-align: center;
+		}
+
+		.top-section .name-title{
+			font-size: 100px;
+			padding-top: 100px;
+		}
 
 		.top-section .welcome-msg{
 			color: black;
-			font-size: 1fr;
+			font-size: 60px;
+			padding-top: 100px;
 		}
 
 		.main {
+			left: 5%;
+			right: 5%;
+			text-align: center;
 			color: black;
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
 	</style>
 </head>
-<body>
+<body style="height: 100%;">
 
 <header class="header" style="background-color: black">
 	<img class="image" src="https://github.com/YJJcoolcool/website/blob/master/logo.jpg?raw=true">
@@ -59,12 +79,12 @@
 </header>
 
 <section class="top-section">
+	<h1 class="name-title">I am YJJcoolcool</h1>
 	<h1 class="welcome-msg">Welcome to my Website!</h1>
 </section>
 
 <section class="main">
-	<h1>I am YJJcoolcool</h1>
-	<p>You probably</p>
+	<p>You probably know me from the things I do online.</p>
 </section>
 
 </body>
