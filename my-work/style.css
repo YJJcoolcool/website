@@ -1,0 +1,120 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height:60px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    margin: 0px 20px;
+    font-size: 30px;
+    font-weight: normal;
+    color:white;
+    text-decoration: none !important;
+    transition: color 0.2s;
+}
+header a:hover{
+    color:yellow;
+}
+
+#description{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffff85;
+}
+#description h1{
+    padding: 20px 0;
+    font-size: 40px;
+}
+h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#main-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.box-of-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.highlight{
+    width: 90%;
+    background-color: #ffdd26;
+    margin:20px;
+    padding:20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.highlight .text{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-self: flex-start;
+}
+.highlight .text h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.highlight img{
+    height: 400px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.stuff-box{
+    width: 600px;
+    background-color: lightgray;
+    margin:20px;
+    padding:15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.live-work{
+    background-color: #fa5d48;
+    color: white;
+}
+.link-button{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
