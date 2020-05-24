@@ -1,7 +1,6 @@
 html, body{
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
 *{
@@ -21,7 +20,7 @@ html, body{
 header{
     position: fixed;
     width: 100%;
-    height:50px;
+    height:60px;
     padding: 5px;
     background-color: black;
     color: white;
@@ -40,4 +39,25 @@ header a{
 }
 header a:hover{
     color:yellow;
+}
+
+#cover-picture{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-image: url("https://www.freeiconspng.com/uploads/no-image-icon-11.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cover-picture-text{
+    position: absolute;
+    bottom: 15%;
+    left:8%;
+    color: white;
+}
+#cover-picture-text h1{
+    font-size: 60px;
+}
+#cover-picture-text h2{
+    font-size: 30px;
 }
