@@ -1,6 +1,6 @@
 # website
 My Github Website
-https://yjjcoolcool.github.io/website/
+https://yjjcoolcool.github.io/website/index.html
 
 This is my website hosted on github.
 
