@@ -1,126 +1,25 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
-<head>
-	<title>YJJcoolcool</title>
+<html>
+	<head>
+		<title>Yam Jun Jie</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="My personal Portfolio Website.">
+		<meta name="keywords" content="Yam Jun Jie, YJJcoolcool, YJJ, Jun Jie, Jun Jie Yam, YJJCoolcool, YJJ City, YJJ City Project">
+		<meta name="author" content="Yam Jun Jie">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+	</head>
 
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-
-		.header{
-			height: 50px;
-			position: relative;
-		}
-		.header h1{
-			color:white;
-			font-family: Arial, Helvetica, sans-serif;
-			position: absolute;
-			top: 25%;
-			font-size: 100dpi;
-		}
-		.header .title {
-			position: absolute;
-			left:40px;
-			top: 15%;
-		}
-		.header .image {
-			width:30px;
-			height: 30px;
-			position: absolute;
-			left:3px;
-			top: 20%;
-		}
-		.header .my-works {
-			right: 30px;
-			top: 15%;
-		}
-
-
-
-		.top-section{
-			left: 0%;
-			right: 0%;
-			width: 100%;
-			height: 95%;
-			background-color: rgb(240,240,50);
-			text-align: center;
-		}
-
-		.top-section .name-title{
-			font-size: 100px;
-			padding-top: 100px;
-		}
-
-		.top-section .welcome-msg{
-			color: black;
-			font-size: 60px;
-			padding-top: 10px;
-		}
-
-		.top-section .underdev-msg{
-			color: black;
-			font-size: 30px;
-			padding-top: 50px;
-		}
-
-		.main {
-			left: 5%;
-			right: 5%;
-			text-align: center;
-			color: black;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-
-	</style>
-</head>
-<body style="height: 100%;">
-
-<header class="header" style="background-color: black">
-	<img class="image" src="https://github.com/YJJcoolcool/website/blob/master/logo.jpg?raw=true">
-	<h1 class="title">YJJcoolcool</h1>
-	<h1 class="my-works">My Works</h1>
-</header>
-
-
-
-<section class="top-section">
-	<h1 class="name-title" id="name-title"> </h1>
-	<h1 class="welcome-msg" id="welcome-msg"> </h1>
-	<h1 class="underdev-msg" id="underdev-msg"> </h1>
-</section>
-<script>
-var i = 0;
-var txt = 'I am YJJcoolcool';
-var speed = 100;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("name-title").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
-
-function disp_wel_msg() {
-	document.getElementById("welcome-msg").innerHTML = "Welcome to my website!";
-}
-
-function disp_dev_msg() {
-	document.getElementById("underdev-msg").innerHTML = "This website is still under development. Check again next time!";
-}
-
-typeWriter();
-setTimeout(disp_wel_msg, 1900);
-setTimeout(disp_dev_msg, 3000);
-</script>
-
-
-<section class="main">
-</section>
-
-</body>
+	<body class="preload">
+		<script>
+		$(window).load(function() {
+			$("body").removeClass("preload");
+		});</script>
+		<header>
+			<a href="" class="links">Home</a>
+			<a href="./my-work">My Work</a>
+			<a href="./contact">Contact Me</a>
+		</header>
+	</body>
 </html>
