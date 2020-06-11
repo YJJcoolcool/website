@@ -9,6 +9,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 header a{
     margin: 0px 10px;
@@ -24,4 +25,16 @@ header a{
 header a:hover{
     color:black;
     background-color: white;
+}
+
+@media (max-width: 700px) {
+    header{
+        bottom: 0;
+        padding-bottom: 20px;
+    }
+    header a{
+        font-size: 20px !important;
+        margin: 0px 4px;
+        padding: 4px 8px;
+    }
 }
