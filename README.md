@@ -1,6 +1,6 @@
 # website
 My Github Website
-https://yjjcoolcool.github.io/website/index.html
+<a href="https://yjjcoolcool.github.io/website/index.html" target="_blank">https://yjjcoolcool.github.io/website/index.html</a>
 
 This is my website hosted on github.
 
