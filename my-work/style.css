@@ -95,8 +95,16 @@ h2{
     font-size: 22px;
     font-weight: bold;
 }
+
+#bottom-space{
+    display: none;
+}
+
 @media (max-width: 700px) {
     #top-space{
         display: none;
+    }
+    #bottom-space{
+        display: block;
     }
 }
