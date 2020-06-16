@@ -137,10 +137,19 @@ html, body{
 }
 
 @media (max-height: 750px) {
+    #top-space{
+        display: none;
+    }
     #cover-picture-text h1{
         font-size: 30px;
     }
     #cover-picture-text h2{
         font-size: 16px;
+    }
+}
+
+@media (min-height: 600px) {
+    #cover-picture-text {
+        bottom: 80px;
     }
 }
