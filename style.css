@@ -34,10 +34,11 @@ html, body{
     color: white;
 }
 #cover-picture-text h1{
-    font-size: 60px;
+    font-size: 50px;
+    transition: font-size 1s;
 }
 #cover-picture-text h2{
-    font-size: 30px;
+    font-size: 24px;
 }
 
 #main{
@@ -103,13 +104,13 @@ html, body{
         display: none;
     }
     #cover-picture-text {
-        bottom: 12%;
+        bottom: 70px;
     }
     #cover-picture-text h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     #cover-picture-text h2{
-        font-size: 18px;
+        font-size: 16px;
     }
     #bottom-space{
         display: block;
@@ -132,5 +133,14 @@ html, body{
     #details *{
         width: 97%;
         margin: initial 0;
+    }
+}
+
+@media (max-height: 750px) {
+    #cover-picture-text h1{
+        font-size: 30px;
+    }
+    #cover-picture-text h2{
+        font-size: 16px;
     }
 }
