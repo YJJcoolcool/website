@@ -27,7 +27,7 @@ header a:hover{
     background-color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px){
     header{
         bottom: 0;
         padding-bottom: 5px;
@@ -36,5 +36,16 @@ header a:hover{
         font-size: 20px !important;
         margin: 0px 4px;
         padding: 4px 8px;
+    }
+}
+
+@media (max-height: 500px) {
+    header{
+        padding: 0;
+        height:50px;
+    }
+    header a{
+        padding: 4px 8px;
+        font-size: 22px;
     }
 }
